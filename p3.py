@@ -31,3 +31,6 @@ b = np.zeros(Nmc)
         limite_alto_2 = b[int(Nmc * 0.975)]
         print "El intervalo de confianza al 95% es: [{}:{}]".format(limite_bajo, limite_alto)
         print "El intervalo de confianza al 95% es: [{}:{}]".format(limite_bajo_2, limite_alto_2)
+
+m, n = np.polyfit(flujo_i, flujo_z, 1)
+#plots
