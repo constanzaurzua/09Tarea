@@ -18,13 +18,15 @@ def funcion_modelo2(parametro2,v):
     return v/D
 
 
-def funcion_min(parametro,xdata, ydata,yerror):
+def funcion_min(D,H):
     ''' minimizacion de la funcion '''
-    return (ydata - funcion_modelo(parametro, xdata)) / yerrors
+    parametro = H
+    return funcion_modelo(parametro, D)
 
 
-def funcion_min2(parametro2, xdata, ydata, yerror):
-    return (ydata - funcion_modelo2(parametro2, xdata)) / yerrors
+def funcion_min2(D, v):
+    paramtro2 = H
+    return funcion_modelo2(parametro2, v)
 
 datos=np.loadtxt('hubble_original.dat')
 parametro =  datos[:,0]
