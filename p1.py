@@ -4,7 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import (leastsq, curve_fit)
 
-''' calcular la cte de hubble con un intervalor de confianza de 95%'''
+''' calcular la cte de hubble con un intervalor de confianza de 95%
+con los datos   que obtuvo hubble a partir de las nebulosas'''
 
 
 def funcion_modelo(parametro, D):
