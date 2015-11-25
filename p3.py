@@ -41,10 +41,11 @@ m, n = np.polyfit(flujo_i, flujo_z, 1)
 print "ecuación ajustada : y = {}x + {}".format(m, n)
 
 # plot
+plt.clf()
 x = np.linspace(0, 500, len(flujo_i))
 plt.plot(x, m*x + n, color='r', label='Ajuste')
 plt.errorbar(flujo_i, flujo_z, xerr=error_i, yerr=error_z, fmt='*',
-             label='Datos Observacionales')
+             label='Datos Observados')
 plt.xlabel("$ Flujo \ Banda_i [10^{-6} Jy]$", fontsize=15)
 plt.ylabel("$ Flujo \ Banda_z [10^{-6} Jy]$", fontsize=15)
 plt.title('$Flujo \ banda \ I \ vs \ banda \ Z $', fontsize=15)
